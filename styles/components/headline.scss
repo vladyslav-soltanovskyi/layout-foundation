@@ -1,0 +1,99 @@
+.headline {
+  position: relative;
+  max-width: 1140px;
+  width: 100%;
+  margin: 84px auto 0;
+  display: flex;
+  padding-bottom: 77px;
+
+  @include for-medium-device {
+    flex-direction: column;
+    margin: 65px auto 0;
+  }
+
+  @include for-small-device {
+    flex-direction: column;
+    margin: 35px auto 0;
+  }
+
+  &__content {
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: 1;
+
+    @include for-large-device {
+      left: 30px;
+    }
+
+    @include for-medium-device {
+      padding: 0 40px;
+      position: static;
+    }
+  }
+
+  &__banner {
+    position: relative;
+    right: -105px;
+    width: 796px;
+    height: 448px;
+    margin-left: auto;
+
+    @include for-extra-large {
+      right: -5px;
+    }
+
+    @include for-large-device {
+      right: 15px;
+    }
+
+    @include for-medium-device {
+      right: 0;
+      margin-top: 33px;
+      width: 100%;
+      height: auto;
+    }
+  }
+
+  &__title {
+    max-width: 754px;
+    width: 100%;
+    font-weight: 700;
+    font-size: 80px;
+    line-height: 78px;
+    letter-spacing: -0.5px;
+    margin: 0;
+
+    @include for-medium-device {
+      font-size: 50px;
+      line-height: 50px;
+      letter-spacing: -0.3125px;
+    }
+  }
+
+  &__description {
+    margin-top: 34px;
+    max-width: 456px;
+    width: 100%;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 34px;
+  }
+
+  &__actions {
+    margin-top: 58px;
+    font-size: 0;
+    
+    @include for-medium-device {
+      margin-top: 30px;
+    }
+  }
+
+  &__button {
+    &:not(:first-child) {
+      @include for-medium-device {
+        margin-top: 15px;
+      }
+    }
+  }
+}

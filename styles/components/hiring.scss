@@ -1,0 +1,152 @@
+.hiring {
+  position: relative;
+  padding: 106px 0 110px;
+
+  @include for-medium-device {
+    padding: 50px 30px;
+  }
+
+  @include for-small-device {
+    padding: 50px 15px;
+  }
+  
+  &__container {
+    max-width: 1140px;
+    width: 100%;
+    margin: auto;
+  }
+
+  &__content {
+    max-width: 555px;
+    width: 100%;
+    text-align: center;
+    margin: auto;
+  }
+  
+  &__description {
+    margin-top: 20px;
+
+    @include for-medium-device {
+      margin-top: 18px;
+    }
+  }
+
+  &__button {
+    margin-top: 28px;
+
+    @include for-medium-device {
+      margin-top: 30px;
+    }
+  }
+}
+
+.jobs  {
+  max-width: 750px;
+  width: 100%;
+  margin: auto;
+  margin-top: 110px;
+
+  @include for-medium-device {
+    margin-top: 39px;
+  }
+
+  .vacancy {
+    background-color: $white;
+    height: 81px;
+    display: flex;
+    align-items: center;
+    padding: 26px 24px 26px 25px;
+    border-radius: 8px;
+    border: 1px solid rgba(43, 41, 45, 0.2);
+    cursor: pointer;
+
+    &:not(:first-child) {
+      margin-top: 20px;
+
+      @include for-medium-device {
+        margin-top: 15px;
+      }
+    }
+
+    @include for-extra-small {
+      margin-top: 39px;
+      padding: 0;
+      height: auto;
+      align-items: stretch;
+      border: none;
+    }
+
+    &__content {
+      display: flex;
+      flex-grow: 1;
+
+      @include for-extra-small {
+        flex-direction: column;
+        padding: 19px 20px;
+        border-radius: 8px 0px 0px 8px;
+        border-top: 1px solid rgba(43, 41, 45, 0.2);
+        border-left: 1px solid rgba(43, 41, 45, 0.2);
+        border-bottom: 1px solid rgba(43, 41, 45, 0.2);
+      }
+    }
+
+    &__title {
+      margin: 0;
+      font-weight: 700;
+      font-size: 22px;
+      line-height: 28px;
+    }
+
+    &__location {
+      margin-left: auto;
+      font-weight: 400;
+      font-size: 18px;
+      line-height: 24px;
+      color: #2b292d99;
+
+      @include for-extra-small {
+        margin-left: 0;
+        margin-top: 18px;
+        font-size: 16px;
+        line-height: 22px;
+      }
+    }
+
+    &-arrow {
+      &__icon {
+        margin-left: 33px;
+        height: 12px;
+        width: 7px;
+        background: url('https://gromcode.s3.eu-central-1.amazonaws.com/front-end/html-css/lesson24/hw1/icon-arrow-right.png');
+        
+        @include for-extra-small {
+          margin-left: 0;
+        }
+      }
+
+      @include for-extra-small {
+        width: 50px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color: #D5D4D5;
+        border-radius: 0px 8px 8px 0px;
+      }
+    }
+
+    &:hover {
+      box-shadow: $shadow;
+      background: $dark-blue-2;
+      color: $white;
+      border: none;
+
+      .vacancy__location {
+        color: $white;
+      }
+
+      .vacancy-arrow__icon {
+        background: url('https://gromcode.s3.eu-central-1.amazonaws.com/front-end/html-css/lesson24/hw1/icon-arrow-right-white.png');
+      }
+    }
+  }
+}

@@ -1,0 +1,36 @@
+.about {
+  display: flex;
+  background-color: $light-gray;
+  justify-content: center;
+  flex-wrap: wrap;
+  padding: 77px 0 76px;
+  
+  @include for-extra-small {
+    padding: 46px 15px;
+  }
+
+  .article {
+    max-width: 555px;
+    width: 100%;
+
+    &:not(:last-child) {
+      margin-right: 29px;
+      
+      @include for-large-device {
+        margin-right: 0;
+      }
+    }
+
+    &__title {
+      font-weight: 700;
+      font-size: 22px;
+      line-height: 32px;
+    }
+
+    &__description {
+      font-weight: 400;
+      font-size: 22px;
+      line-height: 32px;
+    }
+  }
+}

@@ -1,0 +1,45 @@
+@import './variables';
+@import './breakpoints';
+@import './common';
+@import './components/all';
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  color: $text-black;
+  font-family: 'Work Sans', sans-serif;
+}
+
+.page {
+  max-width: 1400px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.hidden {
+  display: none;
+
+  &-md {
+    @include for-medium-device {
+      display: none;
+    }
+  }
+
+  &-xs {
+    @include for-extra-small {
+      display: none;
+    }
+  }
+}
+
+@include for-medium-device {
+  .show-md {
+    display: block;
+  }
+}
+
+.link {
+  color: $dark-blue-3;
+}

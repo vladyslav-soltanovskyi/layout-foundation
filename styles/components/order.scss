@@ -1,0 +1,129 @@
+.order {
+  position: relative;
+  padding: 73px 0 72px;
+  background-color: $light-gray;
+
+  @include for-large-device {
+    padding: 73px 30px 72px;
+  }
+
+  @include for-extra-small {
+    padding: 50px 15px;
+  }
+  
+  &__container {
+    max-width: 1140px;
+    width: 100%;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    @include for-medium-device {
+      flex-direction: column;
+    }
+  }
+
+  &__banner {
+    width: 269px;
+    height: 296px;
+    margin: auto;
+
+    @include for-extra-small {
+      width: 200px;
+      width: 220px;
+    }
+  }
+
+  &__content {
+    max-width: 555px;
+    width: 100%;
+    margin-left: 121px;
+
+    @include for-large-device {
+      margin-left: auto;
+    }
+    
+    @include for-medium-device {
+      margin-left: 0;
+    }
+  }
+
+  &__title {
+    margin: 0;
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 40px;
+    letter-spacing: -0.25px;
+
+    @include for-medium-device {
+      text-align: center;
+      margin-top: 40px;
+    }
+  }
+  
+  &__description {
+    margin: 0;
+    margin-top: 12px;
+    font-weight: 400;
+    font-size: 22px;
+    line-height: 32px;
+
+    @include for-medium-device {
+      margin-top: 18px;
+    }
+  }
+
+  &__button {
+    margin-top: 28px;
+  }
+  
+  &-form {
+    display: flex;
+    margin-top: 26px;
+
+    @include for-medium-device {
+      margin-top: 60px;
+    }
+
+    @include for-extra-small {
+      flex-direction: column;
+    }
+
+    &__input {
+      padding: 17px 15px 18px;
+      height: 48px;
+      flex-grow: 1;
+      background: #FFFFFF;
+      border: 1px solid rgba(43, 41, 45, 0.2);
+      border-radius: 2px;
+      font-weight: 400;
+      font-size: 18px;
+      line-height: 13px;
+      outline: none;
+
+      @include for-extra-small {
+        text-align: center;
+      }
+    }
+
+    &__description {
+      display: inline-block;
+      margin-top: 10px;
+      font-weight: 400;
+      font-size: 14px;
+      line-height: 22px;
+      color: rgba(43, 41, 45, 0.6);
+    }
+
+    &__button {
+      margin-left: 10px;
+
+      @include for-extra-small {
+        margin-left: 0;
+        margin-top: 12px;
+      }
+    }
+
+  }
+}

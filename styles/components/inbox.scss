@@ -1,0 +1,152 @@
+.inbox {
+  position: relative;
+  background-color: $light-orange;
+  padding: 115px 0 116px;
+  
+  @include for-large-device {
+    padding-right: 20px;
+  }
+  
+  @include for-medium-device {
+    padding-right: 0;
+    padding: 50px 15px;
+  }
+  
+  &__container {
+    display: flex;
+    max-width: 1140px;
+    width: 100%;
+    margin: auto;
+    position: relative;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+
+  &__info {
+    max-width: 460px;
+    width: 100%;
+
+    @include for-medium-device {
+      max-width: 100%;
+    }
+  }
+
+  &__content {
+    max-width: 460px;
+    width: 100%;
+
+    @include for-medium-device {
+      max-width: 100%;
+      margin-top: 32px;
+    }
+  }
+
+  &__subtitle {
+    color: #F1592B;
+  }
+  
+  &__title {
+    margin-top: 24px;
+  }
+  
+  &__description {
+    margin-top: 30px;
+  }
+
+  &-banner {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-left: 63px;
+
+    @include for-large-device {
+      margin-left: 40px;
+    }
+
+    @include for-medium-device {
+      margin: auto;
+      max-width: 400px;
+      width: 100%;
+    }
+
+    &__image {
+      width: 425px;
+      height: 510px;
+
+      @include for-medium-device {
+        width: 100%;
+        height: auto;
+      }
+    }
+
+    &__description {
+      margin-top: 15px;
+      color: rgba(43, 41, 45, 0.6);
+      font-weight: 400;
+      font-size: 14px;
+      line-height: 22px;
+      text-align: center;
+    }
+  }
+
+}
+
+.card {
+  width: 520px;
+  right: 30px;
+  position: relative;
+  background-color: $white;
+  box-shadow: $shadow;
+  border-bottom: 4px solid #0185D0;
+
+  @include for-extra-large {
+    right: 40px;
+  }
+
+  @include for-large-device {
+    max-width: 520px;
+    width: 100%;
+    left: 0;
+  }
+
+  &__quote {
+    padding: 30px 30px 26px 30px;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 28px;
+    color: #2B292D;
+
+    @include for-extra-small {
+      padding: 30px 20px 26px;
+    }
+  }
+}
+
+.avatar {
+  display: flex;
+  padding: 0 0 28px 29px;
+
+  &__image {
+    width: 40px;
+    height: 40px;
+  }
+
+  &__text {
+    margin-left: 11px;
+    font-size: 16px;
+    line-height: 22px;
+    color: $text-black;
+  }
+
+  &__title {
+    margin: 0;
+    font-weight: 700;
+  }
+
+  &__position {
+    margin: 0;
+    font-weight: 400;
+    color: rgba(43, 41, 45, 0.6);
+  }
+}

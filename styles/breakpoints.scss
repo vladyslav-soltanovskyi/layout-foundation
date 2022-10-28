@@ -1,0 +1,35 @@
+$xs: 576px;
+$sm: 768px;
+$md: 992px;
+$lg: 1200px;
+$xl: 1399px;
+
+@mixin for-extra-small {
+  @media screen and (max-width: $xs) {
+    @content;
+  }
+}
+
+@mixin for-small-device {
+  @media screen and (max-width: $sm) {
+    @content;
+  }
+}
+
+@mixin for-medium-device {
+  @media screen and (max-width: $md) {
+    @content;
+  }
+}
+
+@mixin for-large-device {
+  @media screen and (max-width: $lg) {
+    @content;
+  }
+}
+
+@mixin for-extra-large {
+  @media screen and (max-width: $xl) {
+    @content;
+  }
+}

@@ -1,0 +1,123 @@
+.top-section {
+  background-color: $light-beige;
+  padding-top: 39px;
+  
+  @include for-medium-device {
+    padding-top: 0;
+  }
+}
+
+.header {
+  max-width: 1140px;
+  width: 100%;
+  margin: auto;
+  height: 62px;
+  display: flex;
+  align-items: center;
+}
+
+.menu-button {
+  display: none;
+  margin-left: auto;
+  outline: none;
+  border: none;
+  background-color: $white;
+  border-left: 1px solid rgba(0, 0, 0, 0.15);
+  height: 64px;
+  justify-content: center;
+  align-items: center;
+  padding: 0 20px;
+  
+  @include for-medium-device {
+    display: flex;
+  }
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  
+  &__text {
+    margin-left: 15px;
+  }
+
+  &__image {
+    width: 60px;
+    height: 60px;
+  }
+  
+  &__name {
+    margin: 0;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 25px;
+  }
+  
+  &__description {
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 25px;
+    opacity: 0.6;
+  }
+}
+
+
+
+.navigation {
+  margin-left: auto;
+
+  @include for-medium-device {
+    display: none;
+  }
+  
+  &-list {
+    list-style: none;
+    display: flex;
+
+    &__item {
+      margin-right: 50px;
+
+      &-link {
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 25px;
+        color: $text-black;
+        text-decoration: none;
+  
+        &_selected {
+          font-weight: 700;
+        }
+      }
+    }
+  } 
+}
+
+.header {
+  @include for-medium-device {
+    background-color: $white;
+    height: 64px;
+  }
+
+  .logo {
+    @include for-medium-device {
+      padding: 8px 15px;
+    }
+
+    &__image {
+      width: 48px;
+      height: 48px;
+    }
+
+    &__description {
+      @include for-medium-device {
+        display: none;
+      }
+    }
+  }
+
+  &__container-button {
+    @include for-medium-device {
+      display: none;
+    }
+  }
+}
