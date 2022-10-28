@@ -1,6 +1,6 @@
 # Layout Price Cards
 
-### [Site link](https://vladyslav-soltanovskyi.github.io/layout-price-cards/)
+### [Site link](https://vladyslav-soltanovskyi.github.io/layout-foundation/)
 
 Layout supports mobile, tablet and desktop versions
 
