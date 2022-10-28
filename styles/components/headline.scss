@@ -82,6 +82,11 @@
     font-weight: 400;
     font-size: 24px;
     line-height: 34px;
+
+    @include for-extra-small {
+      margin: 0;
+      margin-top: 24px;
+    }
   }
 
   &__actions {
