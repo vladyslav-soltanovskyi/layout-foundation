@@ -27,7 +27,11 @@
   &__banner {
     width: 269px;
     height: 296px;
-    margin: auto;
+    margin-left: 96px;
+
+    @include for-large-device {
+      margin-left: 0;
+    }
 
     @include for-extra-small {
       width: 200px;

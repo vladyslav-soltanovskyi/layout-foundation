@@ -234,6 +234,11 @@
     position: static;
   }
 }
+@media screen and (max-width: 576px) {
+  .headline__content {
+    padding: 0 15px;
+  }
+}
 .headline__banner {
   position: relative;
   right: -105px;
@@ -1132,7 +1137,12 @@
 .order__banner {
   width: 269px;
   height: 296px;
-  margin: auto;
+  margin-left: 96px;
+}
+@media screen and (max-width: 1200px) {
+  .order__banner {
+    margin-left: 0;
+  }
 }
 @media screen and (max-width: 576px) {
   .order__banner {
